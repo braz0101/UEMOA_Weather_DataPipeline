@@ -131,7 +131,7 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 ├── 7_RequetesValidationFonctionnelleEntrepot/
 │ └── RequetesPourValidationFonctionnelleEntrepot.sql
 ├── 8_TableauDeBordPowerBI/
-│ └── Visualisations (tableau de bord).pbix
+│ └── Visualisations (tableau de bord).pdf
 └── Rapport_detaillé_du_projet.pdf
 ```
 
@@ -182,12 +182,8 @@ docker-compose up -d
 
 Le tableau de bord Power BI offre une vision complète des tendances météo :  
 
-- 🌡️ Températures moyennes par pays  
-- ☔ Précipitations journalières  
-- 💨 Vitesse du vent moyenne  
-- 🗺️ Carte géographique interactive (UEMOA)
-
-Il y a d'autres tendances météo mais le fichier .pbix (powerBI) était trop lourd pour être uploadé sur github.
+- 🌡️ Températures moyennes par pays   
+- 💨 Vitesse du vent moyenne, et d'autres tendances météo (Visualisations (tableau de bord).pdf)
 
 ---
 
