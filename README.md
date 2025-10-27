@@ -1,6 +1,22 @@
-# 🌦️ UEMOA_Weather_DataPipeline  
+<img width="1255" height="831" alt="image" src="https://github.com/user-attachments/assets/4722dba2-7010-4186-80ad-04c3e6e49c2d" /># 🌦️ UEMOA_Weather_DataPipeline  
 
 Projet complet d’ingénierie des données sur la météo dans la zone **UEMOA** : pipeline **ETL automatisé** avec **Python** et **Apache Airflow**, entrepôt de données **PostgreSQL**, et tableau de bord analytique sous **Power BI**.
+
+---
+
+## 🔹 Résumé du projet
+Le projet **UEMOA_Weather_DataPipeline** vise à construire un **pipeline ETL complet** pour collecter, transformer et analyser les données météo de la zone UEMOA, permettant de produire des tableaux de bord interactifs pour la prise de décision.
+
+---
+
+## 🔹 Prérequis logiciel / environnement
+Avant de lancer le projet avec Docker et Airflow, assurez-vous d’avoir installé et configuré :
+- **Python 3.11**
+- **PostgreSQL** (base de données locale ou serveur distant)
+- **Docker & Docker Compose**
+- **WSL 2** (recommandé pour exécuter Docker et Airflow sous Windows)
+- **Power BI** (pour visualiser les fichiers `.pbix`)
+- **Git** (pour cloner le dépôt et gérer les versions)
 
 ---
 
@@ -122,11 +138,17 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 ---
 
 ## ✅ Validation & Tableau de bord  
-Les requêtes de validation (`7_RequetesValidationFonctionnelleEntrepot.sql`) ont permis de confirmer la cohérence des données.  
-Un tableau de bord Power BI présente :  
-- Les températures moyennes par pays et station.  
-- L’évolution temporelle des précipitations.  
-- Des cartes interactives et indicateurs clés.  
+Les requêtes de validation (`7_RequetesValidationFonctionnelleEntrepot.sql`) ont permis de confirmer la cohérence des données ainsi que le tableau de bord.    
+
+- LTempérature moyenne & précipitations totales par région :
+<img width="1175" height="912" alt="image" src="https://github.com/user-attachments/assets/31e14a97-11ed-422c-ac12-646b33756438" />
+
+<img width="1318" height="781" alt="image" src="https://github.com/user-attachments/assets/9ada9c36-6994-4f0d-aac8-c91b119be084" />
+
+- Top 3 des stations les plus chaudes :
+<img width="1102" height="616" alt="image" src="https://github.com/user-attachments/assets/591f9252-182d-4560-beeb-92a087a7404c" />
+
+<img width="1255" height="831" alt="image" src="https://github.com/user-attachments/assets/94167685-8651-4dd7-b069-b8d6ce8bf590" />
 
 ---
 
@@ -136,14 +158,20 @@ Un tableau de bord Power BI présente :
 ```bash
 docker-compose up -d
 ```
+<img width="1467" height="714" alt="image" src="https://github.com/user-attachments/assets/7f5ba31c-3566-44a8-92e6-d05c35eddb32" />
 
 ### 2️⃣ Accéder à l’interface Airflow :
 👉 [http://localhost:8081](http://localhost:8081)
+
+<img width="955" height="814" alt="image" src="https://github.com/user-attachments/assets/bd86b17f-3e8b-4ddc-bcd1-a8476aabc1b0" />
 
 - utilisateur : `admin`  (à changer)
 - mot de passe : `admin` (à changer)
 
 ### 3️⃣ Exécuter les DAGs :
+
+<img width="1904" height="882" alt="image" src="https://github.com/user-attachments/assets/68b197cf-0c14-4d39-b7f5-0569ac334841" />
+
 - `meteo_uemoa_hourly_dag`
 - `update_dimensions_facts_dag`
 
@@ -158,14 +186,16 @@ Le tableau de bord Power BI offre une vision complète des tendances météo :
 - 💨 Vitesse du vent moyenne  
 - 🗺️ Carte géographique interactive (UEMOA)
 
+Il y a d'autres tendances météo mais le fichier .pbix (powerBI) était trop lourd pour être uploadé sur github.
+
 ---
 
 ## 👨‍💻 Auteurs  
 
 **Ibrahima FALL**  
-🎓 Master 1 – Systèmes, Réseaux & Télécommunications  
-📧 ibrahimafall3110@gmail.com  
-🖥️ Projet académique dans le cadre du module *Data Engineering*  
+🎓 Master – Systèmes, Réseaux & Télécommunications à l'Ecole Supérieure Polytechnique de Dakar (ESP-UCAD)
+📧 ibrahimafall3110@gmail.com
+🖥️ Projet réalisé dans le cadre de la certification Data Engineering – FORCE-N Sénégal 
 
 ---
 
