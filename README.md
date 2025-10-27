@@ -1,4 +1,4 @@
-<img width="1255" height="831" alt="image" src="https://github.com/user-attachments/assets/4722dba2-7010-4186-80ad-04c3e6e49c2d" /># 🌦️ UEMOA_Weather_DataPipeline  
+# 🌦️ UEMOA_Weather_DataPipeline  
 
 Projet complet d’ingénierie des données sur la météo dans la zone **UEMOA** : pipeline **ETL automatisé** avec **Python** et **Apache Airflow**, entrepôt de données **PostgreSQL**, et tableau de bord analytique sous **Power BI**.
 
@@ -140,12 +140,13 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 ## ✅ Validation & Tableau de bord  
 Les requêtes de validation (`7_RequetesValidationFonctionnelleEntrepot.sql`) ont permis de confirmer la cohérence des données ainsi que le tableau de bord.    
 
-- LTempérature moyenne & précipitations totales par région :
+# - Température moyenne & précipitations totales par région :
 <img width="1175" height="912" alt="image" src="https://github.com/user-attachments/assets/31e14a97-11ed-422c-ac12-646b33756438" />
 
 <img width="1318" height="781" alt="image" src="https://github.com/user-attachments/assets/9ada9c36-6994-4f0d-aac8-c91b119be084" />
 
-- Top 3 des stations les plus chaudes :
+
+# - Top 3 des stations les plus chaudes :
 <img width="1102" height="616" alt="image" src="https://github.com/user-attachments/assets/591f9252-182d-4560-beeb-92a087a7404c" />
 
 <img width="1255" height="831" alt="image" src="https://github.com/user-attachments/assets/94167685-8651-4dd7-b069-b8d6ce8bf590" />
