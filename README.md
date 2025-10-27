@@ -65,7 +65,7 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 ## 🔄 Étapes du pipeline  
 
 1️⃣ **Collecte des données**  
-- Téléchargement automatique des archives météo 2023–2025.  
+- Téléchargement automatique des archives météo 2021–2025 (avec possibilité de sélectionner une plage de dates spécifique dans le script).
 - Nettoyage et standardisation (script Python).  
 
 2️⃣ **Création de la base source**  
@@ -89,7 +89,7 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 
 ```
 📦 UEMOA_Weather_DataPipeline
-├── 0_Backup+Recup archives meteo 2023-2025/
+├── 0_Backup+Recup archives meteo 2021-2025/
 ├── 1_Script_Création de la source de données/
 ├── 2_Modélisation de l'entrepot de données/
 ├── 3_Script_Création de l’entrepôt/
@@ -97,6 +97,7 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 ├── 5_Script_Chargement 2/
 ├── 6_Airflow_Chargement 3/
 │   ├── dags/
+│   ├── exports/
 │   ├── scripts/
 │   └── docker-compose.yml
 ├── 7_RequetesValidationFonctionnelleEntrepot/
@@ -125,8 +126,8 @@ docker-compose up -d
 ### 2️⃣ Accéder à l’interface Airflow :
 👉 [http://localhost:8081](http://localhost:8081)
 
-- utilisateur : `admin`  
-- mot de passe : `admin`
+- utilisateur : `admin`  (à changer)
+- mot de passe : `admin` (à changer)
 
 ### 3️⃣ Exécuter les DAGs :
 - `meteo_uemoa_hourly_dag`
