@@ -89,20 +89,34 @@ L’objectif principal est de construire un **entrepôt de données (Data Wareho
 
 ```
 📦 UEMOA_Weather_DataPipeline
-├── 0_Backup+Recup archives meteo 2021-2025/
-├── 1_Script_Création de la source de données/
-├── 2_Modélisation de l'entrepot de données/
-├── 3_Script_Création de l’entrepôt/
-├── 4_Script_Chargement 1/
-├── 5_Script_Chargement 2/
-├── 6_Airflow_Chargement 3/
-│   ├── dags/
-│   ├── exports/
-│   ├── scripts/
-│   └── docker-compose.yml
+├── 0_Backup+Recup_archives_meteo_2021-2025/
+│ └── script_recuperation_archive_meteo.py
+├── 1_Script_Creation_de_la_source_de_donnees/
+│ └── 1_ScriptCreation_BaseDeDonnees_Et_TableBruteSource.sql
+├── 2_Modelisation_de_l_entrepot_de_donnees/
+│ ├── 2_ModeleEntrepotMeteoUemoa.drawio
+│ └── modele.png
+├── 3_Script_Creation_de_l_entrepot/
+│ └── 3_Script_SQL_CreationEntrepotDonnees.sql
+├── 4_Script_Chargement_1/
+│ └── script1.sql
+├── 5_Script_Chargement_2/
+│ └── script2.sql
+├── 6_Airflow_Chargement_3/
+│ ├── dags/
+│ │ ├── meteo_uemoa_hourly_dag.py
+│ │ └── update_dimensions_facts_dag.py
+│ ├── exports/
+│ │ └── meteo_uemoa.csv
+│ ├── scripts/
+│ │ ├── etl_meteo.py
+│ │ └── update_dimensions_facts.py
+│ └── docker-compose.yml
 ├── 7_RequetesValidationFonctionnelleEntrepot/
+│ └── RequetesPourValidationFonctionnelleEntrepot.sql
 ├── 8_TableauDeBordPowerBI/
-└── Rapport détaillé du projet 6.pdf
+│ └── Visualisations (tableau de bord).pbix
+└── Rapport_detaillé_du_projet.pdf
 ```
 
 ---
