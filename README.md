@@ -200,7 +200,18 @@ Il y a d'autres tendances météo mais le fichier .pbix (powerBI) était trop lo
 
 ---
 
-## ⭐ Suggestions d’améliorations futures  
-- Intégration d’un module **IA / Machine Learning** pour la prévision météo.  
+## ⭐ Suggestions d’améliorations futures
+- Intégration d’un module **IA / Machine Learning** pour la prévision météo (régression, séries temporelles, réseaux de neurones, LSTM, Prophet, etc.).  
+- Détection d’anomalies météorologiques avec **IA** pour identifier des événements extrêmes ou erreurs de capteurs.  
 - Automatisation des dashboards Power BI avec API.  
-- Déploiement cloud (AWS / GCP) pour la scalabilité.
+- Déploiement cloud (**AWS**, **GCP**, ou **Azure**) pour la scalabilité et la haute disponibilité.  
+- Utilisation de **Talend** ou d’un autre ETL pour simplifier l’orchestration et la transformation des données.  
+- Création de dashboards interactifs avec **Apache Superset** pour une alternative open-source à Power BI.  
+- Ajout de **tests automatisés** et de monitoring pour le pipeline ETL (alertes en cas d’échec ou de données manquantes).  
+- Optimisation des requêtes SQL et de l’entrepôt pour gérer de plus gros volumes de données.  
+- Mise en place d’un **workflow CI/CD** pour déployer automatiquement les scripts ETL et les dashboards.  
+- Intégration d’**API météo externes** pour enrichir les données historiques avec des informations en temps réel.  
+- Visualisation des tendances météo avec **cartographie interactive** avancée (Leaflet, Plotly, etc.).  
+- Prédiction des tendances climatiques à long terme via **modèles d’apprentissage profond**.  
+- Analyse corrélative entre données météo et autres indicateurs socio-économiques à l’aide de **machine learning multivarié**.
+
