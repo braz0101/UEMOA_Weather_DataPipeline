@@ -194,10 +194,10 @@ Il y a d'autres tendances météo mais le fichier .pbix (powerBI) était trop lo
 ## 👨‍💻 Auteurs  
 
 **Ibrahima FALL**  
-🎓 Master – Systèmes, Réseaux & Télécommunications à l'Ecole Supérieure Polytechnique de Dakar (ESP-UCAD)
-📧 ibrahimafall3110@gmail.com
-🖥️ Projet réalisé dans le cadre de la certification Data Engineering – FORCE-N Sénégal 
-
+🎓 Master – Systèmes, Réseaux & Télécommunications à l'Ecole Supérieure Polytechnique de Dakar (ESP-UCAD)  
+📧 ibrahimafall3110@gmail.com  
+🖥️ Projet réalisé dans le cadre de la certification Data Engineering – FORCE-N Sénégal
+ 
 ---
 
 ## ⭐ Suggestions d’améliorations futures
