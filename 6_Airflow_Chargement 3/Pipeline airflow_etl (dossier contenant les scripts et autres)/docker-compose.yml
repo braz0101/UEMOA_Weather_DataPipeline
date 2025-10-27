@@ -37,7 +37,7 @@ services:
       bash -c "
          airflow db upgrade &&
          if ! airflow users list | grep -q admin; then
-           airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email ibrazobe@gmail.com;
+           airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email xxxx@gmail.com;
          fi &&
          airflow webserver
       "
@@ -66,3 +66,4 @@ services:
 # Volume Docker persistant pour stocker les données PostgreSQL
 volumes:
   postgres_data:
+
